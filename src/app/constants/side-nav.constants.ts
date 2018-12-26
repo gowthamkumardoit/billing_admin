@@ -1,8 +1,12 @@
 export const SIDENAVLIST = [
-  {name: 'Create User', icon: 'verified_user',  link: '/create-user'},
+  {name: 'Dashboard', icon: 'insert_chart',  link: '/dashboard'},
+  {name: 'Create Customer', icon: 'verified_user',  link: '/create-user'},
   {name: 'Add Subscription', icon: 'library_add', link: '/add-subscription' },
   {name: 'Manage Dynamic Controls', icon: 'settings', link: '/manage-controls'},
-  {name: 'View', icon: 'pageview', link: '/view'}
+  {name: 'Manage Customers', icon: 'pageview', link: '/manage-customers'},
+  {name: 'Payments', icon: 'attach_money', link: '/payments'},
+  {name: 'Reports', icon: 'public', link: '/reports'},
+  {name: 'Print', icon: 'print', link: '/print'}
  ];
 
  export const DYNAMIC_CONTROLS = [

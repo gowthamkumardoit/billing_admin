@@ -1,7 +1,4 @@
-<mat-toolbar class="mat-elevation-z1">
-  <mat-icon matListIcon>verified_user</mat-icon>
-  <p style="margin-left:20px; font-size: 24px;" matLine>Create User</p>
-</mat-toolbar>
+<app-page-info-bar [displayObj]= "displayObj"></app-page-info-bar>
 <div class="user-container">
   <mat-card style="margin:20px;">
     <mat-vertical-stepper>
@@ -109,7 +106,7 @@
     </mat-vertical-stepper>
     <mat-card-actions style="display: flex; flex-direction: row; justify-content:flex-end;">
       <button mat-raised-button (click)="save()" color="accent" [disabled]="firstFormGroup.invalid || secondFormGroup.invalid || thirdFormGroup.invalid">Save</button>
-      <button mat-raised-button style="margin-left: 10px;">Reset</button>
+      <button mat-raised-button (click)="reset()" style="margin-left: 10px;">Reset</button>
     </mat-card-actions>
   </mat-card>
 </div>

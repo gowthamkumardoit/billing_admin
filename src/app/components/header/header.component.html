@@ -3,5 +3,8 @@
 
   <!-- This fills the remaining space of the current row -->
   <span class="example-fill-remaining-space"></span>
-  <button *ngIf="!loggedIn" mat-raised-button color="accent" (click)="login()" >Login</button>
+
+  <app-notification></app-notification>
+  <app-user-avatar></app-user-avatar>
+  <!-- <button *ngIf="!loggedIn" mat-raised-button color="accent" (click)="login()" >Login</button> -->
 </mat-toolbar>

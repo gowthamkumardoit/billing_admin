@@ -10,9 +10,11 @@ export class CreateUserComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
+  displayObj: any;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.displayObj = {name: 'Create Customer', icon: 'verified_user',  link: '/create-user'};
     this.userForm = this.fb.group({
       customerName: ['', Validators.required],
       companyName: [''],
@@ -53,4 +55,9 @@ export class CreateUserComponent implements OnInit {
     console.log('save');
   }
 
+  reset() {
+    this.firstFormGroup.updateValueAndValidity();
+    this.secondFormGroup.updateValueAndValidity();
+    this.thirdFormGroup.updateValueAndValidity();
+  }
 }

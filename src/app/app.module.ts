@@ -16,6 +16,14 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
 import { AddSubscriptionComponent } from './components/add-subscription/add-subscription.component';
 import { DynamicControlsComponent } from './components/dynamic-controls/dynamic-controls.component';
 import { ViewComponent } from './components/view/view.component';
+import { PaymentsComponent } from './components/payments/payments.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { PrintComponent } from './components/print/print.component';
+import { PageInfoBarComponent } from './shared/page-info-bar/page-info-bar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UserAvatarComponent } from './shared/user-avatar/user-avatar.component';
+import { NotificationComponent } from './shared/notification/notification.component';
+import { BottomSheetComponent } from './shared/bottom-sheet/bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +37,15 @@ import { ViewComponent } from './components/view/view.component';
     CreateUserComponent,
     AddSubscriptionComponent,
     DynamicControlsComponent,
-    ViewComponent
+    ViewComponent,
+    PaymentsComponent,
+    ReportsComponent,
+    PrintComponent,
+    PageInfoBarComponent,
+    DashboardComponent,
+    UserAvatarComponent,
+    NotificationComponent,
+    BottomSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +54,9 @@ import { ViewComponent } from './components/view/view.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  entryComponents: [
+    BottomSheetComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

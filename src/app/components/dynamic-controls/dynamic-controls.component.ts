@@ -18,11 +18,14 @@ export class DynamicControlsComponent implements OnInit {
   ];
   disableControls: boolean;
   dynamicControls = DYNAMIC_CONTROLS;
+  displayObj: any;
   constructor(private fb: FormBuilder) {
 
    }
 
   ngOnInit() {
+
+    this.displayObj =   { name: 'Manage Dynamic Controls', icon: 'settings', link: '/manage-controls'};
     this.controlsForm = this.fb.group({
       dashboard: true,
       client: true,

@@ -11,13 +11,14 @@ import {map, startWith} from 'rxjs/operators';
 export class AddSubscriptionComponent implements OnInit {
 
   constructor() { }
-
+  displayObj: any;
   nameControl = new FormControl();
   options: string[] = ['One', 'Two', 'Three'];
   filteredOptions: Observable<string[]>;
   plans: any [] = [];
 
   ngOnInit() {
+    this.displayObj = {name: 'Add Subscription', icon: 'library_add', link: '/add-subscription' };
     this.plans = [
       { name: 'Standard Plan', user: 2},
       { name: 'Silver Plan', user: 5},

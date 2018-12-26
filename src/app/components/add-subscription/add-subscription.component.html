@@ -1,8 +1,4 @@
-<mat-toolbar class="mat-elevation-z1">
-  <mat-icon matListIcon>library_add</mat-icon>
-  <p style="margin-left:20px; font-size: 24px;" matLine>Add Subscriptions</p>
-</mat-toolbar>
-
+<app-page-info-bar [displayObj]= "displayObj"></app-page-info-bar>
 <mat-card style="margin:20px;">
   <mat-card-title-group>
     <mat-card-subtitle>**Customer selection is required for the subscription of the customer.</mat-card-subtitle>
@@ -26,7 +22,7 @@
   <mat-card style="margin:20px;" (click)="selectPlan($event)" *ngFor="let plan of plans; let i=index" class="sub-card" id="plan_{{i}}">
     <mat-card-title-group>
       <mat-toolbar class="mat-elevation-z1">
-        <p matLine>{{plan.name}}</p>
+        <p matLine> <mat-checkbox >{{plan.name}}</mat-checkbox></p>
       </mat-toolbar>
     </mat-card-title-group>
     <mat-card-content>

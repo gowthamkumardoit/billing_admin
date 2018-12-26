@@ -6,7 +6,10 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatInputModule,
           MatSelectModule,
           MatStepperModule,
           MatTooltipModule,
-          MatAutocompleteModule} from '@angular/material';
+          MatAutocompleteModule,
+          MatBadgeModule,
+          MatCheckboxModule,
+          MatBottomSheetModule} from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -25,7 +28,10 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatInputModule,
     MatStepperModule,
     MatTooltipModule,
     MatAutocompleteModule,
-    MatSnackBarModule
+    MatBadgeModule,
+    MatCheckboxModule,
+    MatSnackBarModule,
+    MatBottomSheetModule
   ],
   exports : [
     MatToolbarModule,
@@ -41,7 +47,10 @@ import { MatToolbarModule, MatButtonModule, MatCardModule, MatInputModule,
     MatStepperModule,
     MatTooltipModule,
     MatAutocompleteModule,
-    MatSnackBarModule
+    MatBadgeModule,
+    MatCheckboxModule,
+    MatSnackBarModule,
+    MatBottomSheetModule
   ]
 })
 export class MaterialModule { }
