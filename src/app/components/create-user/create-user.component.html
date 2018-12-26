@@ -1,0 +1,54 @@
+<mat-toolbar class="mat-elevation-z1">
+  <mat-icon matListIcon>verified_user</mat-icon>
+  <p style="margin-left:20px; font-size: 24px;" matLine>Create User</p>
+</mat-toolbar>
+<div class="user-container">
+  <mat-card style="margin:20px;">
+    <form [formGroup]="userForm" class="form-container">
+      <mat-form-field appearance="outline" class="userForm-controls">
+        <mat-label class="label">Customer Name</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Customer Name"
+          formControlName="customerName"
+          autocomplete="off"
+          class="input"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="userForm-controls">
+        <mat-label class="label">Company Name</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Company Name"
+          formControlName="companyName"
+          autocomplete="off"
+          class="input"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="userForm-controls">
+        <mat-label class="label">Phone</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Phone"
+          formControlName="phone"
+          autocomplete="off"
+          class="input"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="userForm-controls">
+        <mat-label class="label">Email</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="Email"
+          formControlName="email"
+          autocomplete="off"
+          class="input"
+        />
+      </mat-form-field>
+    </form>
+  </mat-card>
+</div>
