@@ -1,0 +1,14 @@
+.subscription-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .sub-card {
+    flex: auto;
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+
+}
